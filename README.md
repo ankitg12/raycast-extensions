@@ -1,18 +1,17 @@
-# raycast-mac
+# raycast-extensions
 
-Omarchy-style Raycast extensions for macOS. Keyboard-first, like Omarchy — Super key replaced by Cmd.
+Keyboard-first Raycast extensions for macOS. First extension recreates Omarchy `Super+K`; future ones need not be Omarchy-related.
 
 ## Extensions
 
-| Extension | Command | Omarchy equivalent |
+| Extension | Command | What it does |
 |---|---|---|
-| `extensions/keybindings` | Show Keybindings (`Cmd+K`) | `Super+K` keybinding menu |
-| `extensions/aerospace-windows` | (next) window switcher | `Super+Space` Walker window list |
+| `keybindings` | Show Keybindings (`Cmd+K` via AeroSpace) | Fuzzy-searchable menu of your live AeroSpace keybindings, parsed from `~/.config/aerospace/aerospace.toml` — Omarchy `Super+K` equivalent |
 
 ## Dev
 
 ```sh
-cd extensions/keybindings
+cd keybindings
 npm install
 npm run dev     # hot-reload into Raycast
 ```
